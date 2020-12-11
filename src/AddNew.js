@@ -17,16 +17,17 @@ function AddNew({ persons, setPersons, url }) {
     evt.preventDefault();
     if (ifContains(newName)) {
       alert("Name Already Exists");
+    } else {
+      const newcontact = {
+        name: newName,
+        number: newNumber,
+      };
+      axios.post(url, newcontact).then((response) => {
+        setPersons(persons.concat(response.data));
+        setNewName("");
+        setNewNumber("");
+      });
     }
-    const newcontact = {
-      name: newName,
-      number: newNumber,
-    };
-    axios.post(url, newcontact).then((response) => {
-      setPersons(persons.concat(response.data));
-      setNewName("");
-      setNewNumber("");
-    });
   };
   return (
     <form onSubmit={handleSubmit} className="Addnew">
