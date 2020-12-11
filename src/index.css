@@ -12,7 +12,7 @@ body {
   margin: auto;
   padding: 0;
   box-sizing: border-box;
-  grid-gap: 3rem;
+  grid-gap: 7rem;
 }
 .addnewcontactheading {
   margin: -5px auto 10px auto;
