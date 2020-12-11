@@ -7,7 +7,7 @@ import Showperson from "./Showperson";
 function Phonebook() {
   const [persons, setPersons] = useState([]);
   const [showAll, setShowAll] = useState(false);
-  const url = "http://localhost:3001/api/persons";
+  const url = "/api/persons";
   useEffect(() => {
     axios
       .get(url)
