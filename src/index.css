@@ -20,7 +20,15 @@ body {
   margin: auto;
   padding: 0;
   box-sizing: border-box;
-  grid-gap: 5rem;
+  grid-gap: 4rem;
+}
+h1 {
+  color: #522d53;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  margin-top: -13px;
+  margin-bottom: 6px;
+  text-align: center;
 }
 .Searchbar {
   margin-top: 1rem;
@@ -29,7 +37,7 @@ body {
   margin: -5px auto 10px auto;
 }
 h3 {
-  color: #5c415d;
+  color: #522d53;
   margin: 5px 5px;
   font-family: "Raleway", sans-serif;
   font-weight: 600;
@@ -46,7 +54,7 @@ button,
 .addbutton {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
-  background-color: #5c415d;
+  background-color: #522d53;
   color: #e9eeee;
   border-style: none;
   border-radius: 10px;
@@ -56,7 +64,7 @@ button,
   margin: 1px auto;
   padding: 15px 15px;
   border-style: solid;
-  border-color: #ff6978;
+  border-color: #915258;
   border-width: 1.5px;
 }
 .searchbutton {
@@ -78,4 +86,9 @@ button,
 .icons {
   margin-right: 4px;
   color: #e9eeee;
+}
+.searchbutton,
+.addbutton,
+.showAll button {
+  cursor: pointer;
 }

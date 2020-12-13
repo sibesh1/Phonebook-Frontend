@@ -24,6 +24,7 @@ function SearchBar({ persons }) {
   return (
     <>
       <form onSubmit={handleSearch} className="Searchbar">
+        <h1>Phonebook</h1>
         <label>
           <h3>Search:</h3>
           <input
